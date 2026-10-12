@@ -1,0 +1,11 @@
+TABLEFLOW RESTAURANT POS — PILOT READINESS
+
+This package is an updated local Windows pilot. The POS register has a dark, full-screen-friendly layout with a horizontal navigation bar, category sidebar, menu grid, and a fixed order/payment panel.
+
+Working local flows implemented in the source include: login/logout, role-filtered navigation, menu item customization, cart quantity/remove/clear, dine-in/takeaway/delivery modes, send order, checkout, order status updates, tables, kitchen, delivery, menu and recipes, inventory, reports, settings, user management, JSON backup/restore, CSV export, and configured printer-service calls.
+
+IMPORTANT LIMITATIONS
+- Data is stored in browser localStorage on this Windows device; this is not a multi-PC shared database.
+- Login and roles are client-side pilot controls, not hardened commercial security.
+- Printer hardware, paper width, Arabic encoding, and LAN printer IP must be tested on the customer's actual devices.
+- Before commercial use, test all flows on Windows and keep a backup.

@@ -1,0 +1,32 @@
+TABLEFLOW RESTAURANT POS - UI / SALES UPDATE
+
+Changes in this pilot build:
+- Changed the interface from dark navy to a clean white/light professional theme with orange accent buttons.
+- Logout button now has a dedicated click handler. It clears the draft order after confirmation, resets the login PIN field, and returns to the login screen.
+- Added Sales History with text search, date filter, status filter, CSV export, order details, and payment action for unpaid orders.
+- Added End of Day page with paid/delivered sales totals, cash total, payment-method breakdown, recorded expenses, open/cancelled order counts, printable report, and Close Day snapshot.
+- End-of-day snapshots are stored in local browser/app storage and are included in JSON backups.
+
+Important limitations:
+- This remains a local/offline pilot. Data is stored on this device only; it is not yet shared between multiple computers.
+- Close Day saves a report snapshot but does not block further sales or automatically roll to a new accounting shift.
+- Physical printer tests and full Windows app UI tests must still be performed on the target PC.
+- Rebuild the Windows EXE/Setup after replacing the source files to see the changes in the installed app.
+
+CSV IMPORT PILOT
+- Menu & Recipes now has Import CSV and downloadable CSV template.
+- Inventory now has Import CSV and downloadable CSV template.
+- Import previews valid/skipped rows before changing data and requires confirmation.
+- Existing entries with matching names (case-insensitive) are updated; new names are added.
+- Existing menu recipes/extras are preserved when a matching menu item is updated.
+- Supports comma-separated and semicolon-separated CSV, UTF-8 BOM, and quoted CSV cells.
+- This is a local-device import pilot; make a Backup before importing your real list.
+
+Factory Reset added: Admin-only action in Settings. It requires confirmation and typing RESET, starts a JSON backup download, then restores original demo data and clears current cart state. Test in browser/app; verify backup file downloads before using on important data.
+
+LATEST UPDATE (2026-10-12)
+- Added Export CSV / Excel-compatible CSV buttons to Menu & Recipes and Inventory.
+- Menu export includes name, category, price, cost, emoji, availability, recipe JSON and modifiers JSON.
+- Inventory export includes name, unit, quantity, minimum stock and unit cost.
+- Factory Reset now downloads a backup first, then clears menu items, inventory, orders/sales history, tables, expenses, closed-day reports and custom users. It retains only admin / 1234 so the operator can sign in after reset. Change this PIN before live use.
+- Added Minimize and Close controls on both the login screen and the main application. The Windows app launcher exposes the corresponding pywebview window actions. In browser-only mode, the app may require Alt+F4 to close.

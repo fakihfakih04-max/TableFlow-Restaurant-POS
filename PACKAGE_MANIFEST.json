@@ -1,0 +1,18 @@
+{
+  "project": "TableFlow Restaurant POS",
+  "package_type": "Windows desktop app source/build kit",
+  "status": "requires Windows build; not a compiled Setup.exe",
+  "entry_source": "app_launcher.py",
+  "web_ui": "index.html",
+  "icon": "TableFlowPOS.ico",
+  "installer_script": "TableFlowPOS_Setup.iss",
+  "build_script": "BUILD_WINDOWS_SETUP.bat",
+  "note": "Installer must be compiled on Windows with Python, WebView2, PyInstaller and Inno Setup 6.",
+  "version": "1.1.0-pilot",
+  "features": [
+    "White professional theme",
+    "Dedicated logout to login screen",
+    "Sales history with search/date/status filters",
+    "End-of-day sales report and saved close-day snapshot"
+  ]
+}

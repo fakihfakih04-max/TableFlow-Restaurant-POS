@@ -1,0 +1,17 @@
+TABLEFLOW RESTAURANT POS — CUSTOMER CHECKLIST
+
+1. Sign in with an active user. Click Logout: it must return to login. If a draft order exists, confirm/cancel the warning.
+2. Click Backup: a dated JSON file should download. Open Settings and try Restore only with a copy of a known backup.
+3. Click POS: register opens with categories, search, product grid, and current order.
+4. Select category and search; add a product; choose modifiers/notes/quantity; check totals.
+5. Change quantity, remove a line, and Clear the draft.
+6. Dine-in: choose a free table and Send to kitchen; order appears in Kitchen and table becomes occupied.
+7. Takeaway and Delivery: create order and verify it appears in order/kitchen or delivery views.
+8. Checkout & pay: confirm payment; verify order is marked paid and appears in Reports.
+9. Menu: add/edit/delete a test item; verify it appears in POS if available.
+10. Inventory: add/edit ingredient and adjust stock; verify low-stock display.
+11. Settings: save currency/rate/tax; verify the badge and totals.
+12. Print: test USB and LAN printers only after confirming printer names/IP/port.
+13. Restart the app and verify local records persist on the same Windows user profile.
+
+Do not test Restore or Reset Demo on the only copy of live data.
