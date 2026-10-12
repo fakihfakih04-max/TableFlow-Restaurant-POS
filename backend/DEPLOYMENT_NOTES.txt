@@ -1,0 +1,13 @@
+TABLEFLOW ONLINE ORDER API
+
+This backend serves:
+- GET /api/menu
+- POST /api/orders
+- POST /api/menu/publish (requires X-TableFlow-Admin token)
+- GET /api/orders/pending (requires X-TableFlow-Admin token)
+- POST /api/orders/{id}/ack (requires X-TableFlow-Admin token)
+
+Set TABLEFLOW_ADMIN_TOKEN to a long random secret in the hosting provider's environment settings.
+Use HTTPS and persistent database storage. SQLite on ephemeral hosting can lose orders after restart.
+Do not put the admin token in the public customer menu.
+The current pilot shares menu and incoming orders; it does not provide complete bidirectional POS database synchronization.
